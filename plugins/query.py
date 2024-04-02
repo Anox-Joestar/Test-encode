@@ -25,9 +25,9 @@ async def Cb_Handle(bot: Client, query: CallbackQuery):
     if data == 'home':
         btn = [
             [InlineKeyboardButton(text='❗ Hᴇʟᴘ', callback_data='help'), InlineKeyboardButton(
-                text='🌨️ Aʙᴏᴜᴛ', callback_data='about')],
-            [InlineKeyboardButton(text='📢 Uᴘᴅᴀᴛᴇs', url='https://t.me/AIORFT'), InlineKeyboardButton
-                (text='💻 Dᴇᴠᴇʟᴏᴘᴇʀ', url='https://t.me/Snowball_Official')]
+                text='💣 Aʙᴏᴜᴛ', callback_data='about')],
+            [InlineKeyboardButton(text='🐖 Uᴘᴅᴀᴛᴇs', url='https://t.me/Kizoshuka'), InlineKeyboardButton
+                (text='🤡 Dᴇᴠᴇʟᴏᴘᴇʀ', url='https://t.me/AnoxSama')]
         ]
         await query.message.edit(text=Txt.PRIVATE_START_MSG.format(query.from_user.mention), reply_markup=InlineKeyboardMarkup(btn))
 
@@ -83,7 +83,7 @@ async def Cb_Handle(bot: Client, query: CallbackQuery):
         user_id = data.split('-')[1]
 
         if int(user_id) not in [query.from_user.id, 0]:
-            return await query.answer(f"⚠️ Hᴇʏ {query.from_user.first_name}\nTʜɪs ɪs ɴᴏᴛ ʏᴏᴜʀ ғɪʟᴇ ʏᴏᴜ ᴄᴀɴ'ᴛ ᴅᴏ ᴀɴʏ ᴏᴘᴇʀᴀᴛɪᴏɴ", show_alert=True)
+            return await query.answer(f"🍌 Hᴇʏ {query.from_user.first_name}\nTʜɪs ɪs ɴᴏᴛ ʏᴏᴜʀ ғɪʟᴇ ʏᴏᴜ ᴄᴀɴ'ᴛ ᴅᴏ ᴀɴʏ ᴏᴘᴇʀᴀᴛɪᴏɴ", show_alert=True)
 
         else:
 
@@ -162,7 +162,7 @@ async def Cb_Handle(bot: Client, query: CallbackQuery):
         user_id = data.split('-')[1]
         
         if int(user_id) not in [query.from_user.id, 0]:
-            return await query.answer(f"⚠️ Hᴇʏ {query.from_user.first_name}\nTʜɪs ɪs ɴᴏᴛ ʏᴏᴜʀ ғɪʟᴇ ʏᴏᴜ ᴄᴀɴ'ᴛ ᴅᴏ ᴀɴʏ ᴏᴘᴇʀᴀᴛɪᴏɴ", show_alert=True)
+            return await query.answer(f"🐖 Hᴇʏ {query.from_user.first_name}\nTʜɪs ɪs ɴᴏᴛ ʏᴏᴜʀ ғɪʟᴇ ʏᴏᴜ ᴄᴀɴ'ᴛ ᴅᴏ ᴀɴʏ ᴏᴘᴇʀᴀᴛɪᴏɴ", show_alert=True)
         
         try:
             await query.message.delete()
